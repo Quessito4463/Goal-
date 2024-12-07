@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty - Resumen y Armas</title>
+
+    <!-- Fuentes externas -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-image: url('https://URL_DE_TU_IMAGEN_DE_FONDO'); /* Imagen de fondo de estilo Call of Duty */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        
+        /* Efecto oscuro en el fondo */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #f4e242;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        h2 {
+            color: #e8b923;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        }
+
+        /* Sección de armas */
+        .arma {
+            font-weight: bold;
+            color: #f2f2f2;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .arma img {
+            max-width: 80px;
+            margin-right: 20px;
+        }
+
+        .arma-description {
+            font-size: 1.1em;
+        }
+
+        /* Estilos de botones */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f4e242;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .btn:hover {
+            background-color: #e8b923;
+            color: #fff;
+        }
+
+        /* Animación para el título */
+        @keyframes slide-in {
+            from { 
+                transform: translateY(-50px); 
+                opacity: 0; 
+            }
+            to { 
+                transform: translateY(0); 
+                opacity: 1; 
+            }
+        }
+
+        h1, h2 {
+            animation: slide-in 0.7s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .arma img {
+                max-width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Call of Duty</h1>
+        <p>
+            *Call of Duty* es una de las franquicias de videojuegos más exitosas de todos los tiempos. Desde su lanzamiento en 2003, se ha mantenido a la vanguardia de los juegos de disparos en primera persona (FPS), ofreciendo una experiencia de combate inmersiva en escenarios que van desde la Segunda Guerra Mundial hasta guerras modernas y futuristas. La serie es conocida por sus intensas campañas y modos multijugador que han revolucionado el género. A través de los años, ha ampliado su universo con modos icónicos como *Zombies* y su experiencia multijugador competitiva que atrae a millones de jugadores en todo el mundo.
+        </p>
+
+        <h2>Top 5 Armas Más Conocidas</h2>
+
+        <div class="arma">
+            <img src="https://URL_DE_TU_IMAGEN_DEL_M4A1" alt="M4A1">
+            <div class="arma-description">
+                <strong>M4A1</strong> - Una de las armas más icónicas de *Call of Duty: Modern Warfare*, conocida por su equilibrio entre daño y precisión.
+            </div>
+        </div>
+
+        <div class="arma">
+            <img src="https://URL_DE_TU_IMAGEN_DEL_AK47" alt="AK-47">
+            <div class="arma-description">
+                <strong>AK-47</strong> - Este fusil de asalto es legendario por su gran poder de fuego y su presencia en casi todas las entregas del juego.
+            </div>
+        </div>
+
+        <div class="arma">
+            <img src="https://URL_DE_TU_IMAGEN_DEL_AWP" alt="AWP">
+            <div class="arma-description">
+                <strong>AWP (L96A1)</strong> - Francotirador letal, famoso por su capacidad de eliminar enemigos con un solo disparo.
+            </div>
+        </div>
+
+        <div class="arma">
+            <img src="https://URL_DE_TU_IMAGEN_DEL_MP5" alt="MP5">
+            <div class="arma-description">
+                <strong>MP5</strong> - Subfusil muy versátil y ligero, ideal para combates a corta distancia.
+            </div>
+        </div>
+
+        <div class="arma">
+            <img src="https://URL_DE_TU_IMAGEN_DEL_CUCHILLO" alt="Cuchillo Táctico">
+            <div class="arma-description">
+                <strong>Cuchillo Táctico</strong> - Aunque no es un arma de fuego, es letal en manos expertas y ha sido un símbolo de las ejecuciones rápidas y silenciosas.
+            </div>
+        </div>
+
+        <a href="https://www.callofduty.com" class="btn">Juega ahora</a>
+    </div>
+
+</body>
+</html>
